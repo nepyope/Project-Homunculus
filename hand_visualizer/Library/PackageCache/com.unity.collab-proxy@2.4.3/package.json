@@ -1,0 +1,40 @@
+{
+  "name": "com.unity.collab-proxy",
+  "displayName": "Version Control",
+  "version": "2.4.3",
+  "unity": "2020.3",
+  "unityRelease": "48f1",
+  "description": "The package gives you the ability to use Unity Version Control in the Unity editor. To use Unity Version Control, a subscription is required. Learn more about how you can get started for free by visiting https://unity.com/solutions/version-control",
+  "keywords": [
+    "backup",
+    "cloud",
+    "collab",
+    "collaborate",
+    "collaboration",
+    "control",
+    "devops",
+    "plastic",
+    "plasticscm",
+    "source",
+    "team",
+    "teams",
+    "version",
+    "vcs"
+  ],
+  "category": "Editor",
+  "relatedPackages": {
+    "com.unity.collab-proxy.tests": "2.4.3"
+  },
+  "_upm": {
+    "changelog": "### Added\n\n- Changed the default ignore.conf to not ignore itself\n- Added \"Undo unchanged\" and \"Undo checkouts keeping changes\" options to pending changes view\n- Removed focus redirection after Check-in\n\n### Fixed\n\n- Moving folders in the Editor now correctly use the UVCS \"Move\" operation\n- Fixed hang on domain reload \n- Fixed \"item with the same key has already been added\" error\n- Fixed failure to delete a .meta file when deleting a private folder from the pending changes\n- Supported workspace name with non-latin characters in Pending Changes\n- Fixed text cut-off in filter rules dialog\n- Fixed unexpected error while switching between branches\n- Fixed error after renaming a parent branch of the working branch\n- Fixed variables's value becoming clear after resolving conflict in inspector\n- Removed misleading indication about shelves\n- Fixed column sorting in pending changes view\n- Fixed missing incoming changes after removing a branch\n- Fixed \"Collection was modified\" error when doing multiple renames in a row\n- Fixed undo & check-in operations not working when the current scene was never saved\n- Fixed check in error if nothing is selected in the pending changes tree"
+  },
+  "upmCi": {
+    "footprint": "37d231fcc2d5df5d9a23dabe85e2454320fa3a37"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.4/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git",
+    "type": "git",
+    "revision": "d4c8fa70dd9679b33019945dc0a483c8c7e8038f"
+  }
+}
