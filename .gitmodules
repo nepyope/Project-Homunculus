@@ -1,3 +1,6 @@
 [submodule "pcb"]
-	path = pcb
+	path = glove/pcb
 	url = git@github.com:max-titov/glove-v3.git
+[submodule "exo"]
+	path = exo
+	url = https://github.com/nepyope/hmc_exo.git
