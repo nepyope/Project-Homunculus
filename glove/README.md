@@ -23,7 +23,15 @@ sensors through a multiplexer and streams the readings over USB serial.
 | [`model/`](model/) | URDF of the glove (`glove_non_diametric.urdf`, 23 revolute DOF) plus the STL meshes it references, in `meshes/printed/` (per joint: MCP, PIP, DIP, palm), `meshes/hardware/` and `meshes/electronics/` |
 | [`visualizer/`](visualizer/) | Interactive viewer for `model/` (meshcat 3D view + one slider per joint) and a URDF validator for Onshape re-exports |
 | [`BOM.md`](BOM.md) | Bill of materials: boards, power, screws, bearings |
-| [`tutorial.pdf`](tutorial.pdf) | Build tutorial |
+| [`assembly.html`](#assembly) | Interactive 3D assembly guide (see [below](#assembly)) |
+
+## Assembly
+
+**[Open the 3D assembly guide](https://raw.githack.com/nepyope/Project-Homunculus/main/glove/assembly.html)**
+
+[`assembly.html`](assembly.html) walks through building the glove step by step in
+3D, listing the parts each operation uses. It's a single self-contained file, so
+it also works offline: download it and open it in any browser.
 
 ## homunculus_pcb
 
