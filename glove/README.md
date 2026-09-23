@@ -18,7 +18,7 @@ Full-quality clip: [`recording_1s-5s.webm`](recording_1s-5s.webm).*
 | --- | --- |
 | [`firmware.ino`](firmware.ino) | ESP32-C3 firmware: steps the mux through all 16 channels, reads each sensor on the ADC and prints the values over serial at 115200 baud |
 | [`homunculus_pcb/`](homunculus_pcb/) | The sensor board: KiCad project, fab-ready gerbers, BOM and pick-and-place file (see [below](#homunculus_pcb)) |
-| [`print/`](print/) | 3D-printable parts: full `left_hand.stl` / `right_hand.stl`, the Blender source, and [`individual_stls/`](print/individual_stls/) split per joint (MCP, PIP, DIP, IP, palm) |
+| [`print/`](print/) | Print plates `left_hand.stl` / `right_hand.stl`: all 47 printed parts per hand, laid flat, about 200 × 204 mm. `make_plates.py` rebuilds them from `model/` |
 | [`model/`](model/) | URDF of the glove (`glove_non_diametric.urdf`, 23 revolute DOF) plus the STL meshes it references, in `meshes/printed/` (per joint: MCP, PIP, DIP, palm), `meshes/hardware/` and `meshes/electronics/` |
 | [`visualizer/`](visualizer/) | Interactive viewer for `model/` (meshcat 3D view + one slider per joint) and a URDF validator for Onshape re-exports |
 | [`BOM.md`](BOM.md) | Bill of materials: boards, power, screws, bearings |
