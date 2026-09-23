@@ -27,9 +27,9 @@ sensors through a multiplexer and streams the readings over USB serial.
 
 ## homunculus_pcb
 
-![PCB top layers](homunculus_pcb/images/pcb_top.png)
+<img src="homunculus_pcb/images/pcb_top.png" width="100%" alt="PCB top layers">
 
-<p align="center"><img src="homunculus_pcb/images/pcb_photo.png" alt="Assembled PCB"></p>
+<img src="homunculus_pcb/images/pcb_photo.png" width="100%" alt="Assembled PCB">
 
 An 80 × 36 mm two-layer board (glove-v4.2). Each of the 16 JST SH 3-pin
 connectors (`H0`–`H15`) takes one Hall sensor. They feed a CD74HC4067 16-channel
