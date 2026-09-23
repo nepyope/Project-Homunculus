@@ -7,7 +7,7 @@ The model itself lives one level up, in [`../model/`](../model/).
 ```bash
 python3 view_glove.py              # 3D view + one slider per joint
 python3 view_glove.py --self-test  # no windows: parse, mesh resolution, FK
-python3 check_urdf.py ../model/glove_non_diametric.urdf --assets-dir ../model/meshes
+python3 check_urdf.py ../model/glove_non_diametric.urdf
 ```
 
 The viewer opens a meshcat render in the browser (`http://127.0.0.1:7000/static/`)
@@ -26,7 +26,9 @@ plus those four; nothing here imports from LeRobot.
 | `view_glove.py` | The viewer: URDF parser, forward kinematics, meshcat scene, sliders |
 | `check_urdf.py` | Structural validator: link/joint tree, DOF count, mesh existence, optional MuJoCo compile |
 | `../model/glove_non_diametric.urdf` | **The working model.** 129 links, 128 joints, 23 revolute DOF |
-| `../model/meshes/` | The 168 binary STLs it references |
+| `../model/meshes/printed/` | The 3D-printed parts, split per joint like [`../print/individual_stls/`](../print/individual_stls/): `MCP/`, `PIP/`, `DIP/`, `palm/` |
+| `../model/meshes/hardware/` | M2 screws and nuts |
+| `../model/meshes/electronics/` | PCB, ESP32 module, connectors and passives |
 | `onshape/config.json` | onshape-to-robot config — document ID and assembly name, i.e. how to re-export |
 
 Only `view_glove.py` and `../model/` are needed to run the viewer. `check_urdf.py`

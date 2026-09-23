@@ -190,7 +190,9 @@ def main():
     missing = []
     for f in uniq:
         rel = f.replace("package://", "")
-        cands = [os.path.join(urdf_dir, rel)] + [os.path.join(d, os.path.basename(rel)) for d in search_dirs]
+        in_pkg = rel.split("/", 1)[-1] if f.startswith("package://") else rel
+        cands = [os.path.join(urdf_dir, rel), os.path.join(urdf_dir, in_pkg)]
+        cands += [os.path.join(d, os.path.basename(rel)) for d in search_dirs]
         if not any(os.path.exists(c) for c in cands):
             missing.append(f)
     if missing:

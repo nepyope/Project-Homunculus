@@ -10,8 +10,8 @@
 
 Drag a slider with the mouse. Keys: R = reset to zero, F = fist, Q/Esc = quit.
 
-Meshes are looked up from the `package://` path relative to the URDF, then in
-./meshes and ./assets alongside it. Needs numpy, scipy, meshcat, pygame.
+A mesh `package://<pkg>/<path>` is looked up as <path> relative to the URDF,
+then by file name in ./meshes and ./assets alongside it. Needs numpy, scipy, meshcat, pygame.
 """
 
 from __future__ import annotations
@@ -174,7 +174,8 @@ class URDF:
 
     def _resolve(self, fn: str) -> str | None:
         rel = fn.split("://", 1)[-1]
-        cands = [os.path.join(self.dir, rel)]
+        in_pkg = rel.split("/", 1)[-1] if fn.startswith("package://") else rel
+        cands = [os.path.join(self.dir, rel), os.path.join(self.dir, in_pkg)]
         cands += [os.path.join(d, os.path.basename(rel)) for d in self.search_dirs]
         return next((os.path.abspath(c) for c in cands if os.path.exists(c)), None)
 
