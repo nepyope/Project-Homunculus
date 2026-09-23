@@ -7,7 +7,10 @@ A hand exoskeleton that reads every finger joint with Hall effect sensors. Each
 joint carries a magnet and an SS49E sensor; a custom ESP32-C3 board scans all 16
 sensors through a multiplexer and streams the readings over USB serial.
 
-<p align="center"><img src="demo.gif" alt="Glove model articulating in the viewer"></p>
+<p align="center">
+  <img src="demo.gif" height="383" alt="Glove model articulating in the viewer">
+  <img src="teleop.gif" height="383" alt="Glove teleoperating a robot hand">
+</p>
 
 ## Layout
 
