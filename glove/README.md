@@ -44,3 +44,17 @@ three OPA340 op-amps (`U4`–`U6`) sit in the analog path to the ADC.
 | [`homunculus_pcb/POS.csv`](homunculus_pcb/POS.csv) | Pick-and-place positions, for PCB assembly |
 | [`homunculus_pcb/kicad/pcb/`](homunculus_pcb/kicad/pcb/) | KiCad project: open `desk_display.kicad_pro` (schematic + layout, custom footprints in `lib/`) |
 | [`homunculus_pcb/images/`](homunculus_pcb/images/) | The top layer plot from `kicad-cli pcb export svg`, and a photo of the assembled board |
+
+## Acknowledgements
+
+Thank you to everyone who made this glove happen:
+
+- **[Max Titov](https://x.com/maxtitovvv)**, who co-designed the PCB and saw early potential in the glove
+- **[Remi Cadene](https://remicadene.com/)**, for bringing the glove to the attention of Hugging Face
+- **Hugging Face**, for sponsoring development of the glove for the past year
+- **[HOMIE](https://homietele.github.io/)**
+- **[Eidon](https://github.com/Eidon-AI/eidon-glove)**
+- **The Homunculus community**, on [Discord](https://discord.gg/5bphCGJUGA)
+
+And thanks to everyone else who collaborated on this project: testing, feedback,
+ideas and builds all shaped it. 
