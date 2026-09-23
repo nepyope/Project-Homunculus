@@ -1,0 +1,2 @@
+*.stl binary
+*.urdf text eol=lf

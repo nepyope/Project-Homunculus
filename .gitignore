@@ -1,1 +1,3 @@
 .vscode/
+# vendor library (espressif/kicad-libraries), not needed to open the board
+glove/homunculus_pcb/kicad/pcb/lib/kicad-libraries/

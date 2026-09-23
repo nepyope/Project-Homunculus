@@ -1,0 +1,50 @@
+let's keep sane
+1) you can build and then decimate the ground fill and it goes back to how it was. cool
+
+
+ for the usb 
+
+
+
+C23067 for resistors
+
+
+C1581 capacitor
+
+j1 https://jlcpcb.com/partdetail/Sofng-MC311D/C136423
+
+C1, C2 https://jlcpcb.com/partdetail/20411-CL10A106KP8NNNC/C19702 10uF
+
+c3, c4 https://jlcpcb.com/partdetail/Yageo-CC0603KRX7R9BB104/C14663 100nF
+
+R1 R2 R6 C25804 (10k)
+
+R3 C22935 (1M)
+
+R4 R5 C23067 (5.11k)
+
+U1 C2934560
+
+U2 C6186
+
+all 0603
+
+the drills 
+
+pos should be slightly lower
+
+U1,154.8,-139.65,0.0,top
+
+
+
+I'm just trying to connect esp32 to usb c for a project, wanted to ask you guys if what i've done makes sense since i'm not super familiar with PCB design. Basically, i started off from https://github.com/oltdaniel/PCB_deskDisplay/tree/main and simplified it down. On a 2-layer pcb we have a 12 pin usb-c connector, chip is esp32c3. I connect D- and D+ to 13 and 14, GND to the 3x3 pad and the board, 5v to a voltage regulator which then goes through to the board as 3v3, connect the S1 PAD pins of the usb c to a 1M ohm resistor, and finally the B5 and A5 pins of the usb c to 5.11k resistors. I have not filled the ground plane yet. Do the r2 and r1 resistors do anything? am i missing something else? Thank you so much, there's so many variables and I've been at kicad for 3 days now so i thought i'd ask for help :)
+
+
+resettable fuse 
+https://jlcpcb.com/partdetail/Brightking-SMD0805B050TF/C269104
+
+
+10-47µF	5V (VBUS) → GND	Stabilizes USB 5V input
+10µF	3.3V (Regulator Output) → GND	Stabilizes 3.3V rail
+100nF	3.3V (ESP32 VCC) → GND	Filters high-frequency noise
+10µF	3.3V (ESP32 VCC) → GND	Helps maintain stable power
