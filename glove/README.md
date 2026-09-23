@@ -3,8 +3,6 @@
 
 # Project Homunculus: Hall Effect VR Glove
 
-The most goated vr glove ever
-
 A hand exoskeleton that reads every finger joint with Hall effect sensors. Each
 joint carries a magnet and an SS49E sensor; a custom ESP32-C3 board scans all 16
 sensors through a multiplexer and streams the readings over USB serial.
