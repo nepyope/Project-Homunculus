@@ -3,8 +3,6 @@
 
 # Project Homunculus: Hall Effect VR Glove
 
-![Project Homunculus Logo](homunculus.png)
-
 The most goated vr glove ever
 
 A hand exoskeleton that reads every finger joint with Hall effect sensors. Each
@@ -31,8 +29,6 @@ Full-quality clip: [`recording_1s-5s.webm`](recording_1s-5s.webm).*
 ## homunculus_pcb
 
 ![PCB top layers](homunculus_pcb/images/pcb_top.png)
-
-![PCB bottom layers (mirrored, as seen from below)](homunculus_pcb/images/pcb_bottom.png)
 
 An 80 × 36 mm two-layer board (glove-v4.2). Each of the 16 JST SH 3-pin
 connectors (`H0`–`H15`) takes one Hall sensor. They feed a CD74HC4067 16-channel
