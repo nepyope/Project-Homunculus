@@ -9,9 +9,6 @@ sensors through a multiplexer and streams the readings over USB serial.
 
 <p align="center"><img src="demo.gif" alt="Glove model articulating in the viewer"></p>
 
-*The glove's kinematic model (23 DOF) being driven in the [visualizer](visualizer/).
-Full-quality clip: [`recording_1s-5s.webm`](recording_1s-5s.webm).*
-
 ## Layout
 
 | Path | What |
