@@ -27,9 +27,9 @@ sensors through a multiplexer and streams the readings over USB serial.
 
 ## homunculus_pcb
 
-![Assembled PCB](homunculus_pcb/images/pcb_photo.png)
-
 ![PCB top layers](homunculus_pcb/images/pcb_top.png)
+
+<p align="center"><img src="homunculus_pcb/images/pcb_photo.png" alt="Assembled PCB"></p>
 
 An 80 × 36 mm two-layer board (glove-v4.2). Each of the 16 JST SH 3-pin
 connectors (`H0`–`H15`) takes one Hall sensor. They feed a CD74HC4067 16-channel
@@ -43,4 +43,4 @@ three OPA340 op-amps (`U4`–`U6`) sit in the analog path to the ADC.
 | [`homunculus_pcb/BOM.csv`](homunculus_pcb/BOM.csv) | Component list with LCSC part numbers, for PCB assembly |
 | [`homunculus_pcb/POS.csv`](homunculus_pcb/POS.csv) | Pick-and-place positions, for PCB assembly |
 | [`homunculus_pcb/kicad/pcb/`](homunculus_pcb/kicad/pcb/) | KiCad project: open `desk_display.kicad_pro` (schematic + layout, custom footprints in `lib/`) |
-| [`homunculus_pcb/images/`](homunculus_pcb/images/) | Photo of the assembled board, and the top layer plot from `kicad-cli pcb export svg` |
+| [`homunculus_pcb/images/`](homunculus_pcb/images/) | The top layer plot from `kicad-cli pcb export svg`, and a photo of the assembled board |
