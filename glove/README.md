@@ -29,9 +29,19 @@ sensors through a multiplexer and streams the readings over USB serial.
 
 **[Open the 3D assembly guide](https://raw.githack.com/nepyope/Project-Homunculus/main/glove/assembly.html)**
 
+<a href="https://raw.githack.com/nepyope/Project-Homunculus/main/glove/assembly.html"><img src="assembly_preview.gif" width="100%" alt="Preview of the 3D assembly guide"></a>
+
 [`assembly.html`](assembly.html) walks through building the glove step by step in
 3D, listing the parts each operation uses. It's a single self-contained file, so
 it also works offline: download it and open it in any browser.
+
+### Using the glove with LeRobot
+
+Once assembled and flashed, the glove is supported in LeRobot as the
+[`HomunculusGlove`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/teleoperators/homunculus/homunculus_glove.py)
+teleoperator. It reads the 16 joint values the firmware streams over serial,
+walks you through a per-finger range-of-motion calibration on first connect, and
+maps the glove's joints to the HOPE-Jr robot hand.
 
 ## homunculus_pcb
 
