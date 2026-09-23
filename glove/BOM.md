@@ -6,7 +6,7 @@ BOM for Homunculus Glove
 | M2 | screw set | 1 set | [Amazon](https://amzn.eu/d/cVf2toH) | hand
 
 ## PCB
-Create an account for [JLCPCB](https://jlcpcb.com/) and place an order. Add gerber file and select PCB assembly, in the next screen paste BOM and POS for teleop device and connectors
+Create an account for [JLCPCB](https://jlcpcb.com/) and place an order for `homunculus_pcb`. Add gerber file and select PCB assembly, in the next screen paste BOM and POS for teleop device and connectors
 
 ## Encoders
 
