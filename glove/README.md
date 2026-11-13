@@ -1,5 +1,5 @@
 [![YouTube](https://img.shields.io/badge/YouTube-Video-red?logo=youtube)](https://www.youtube.com/watch?v=iPtgvh6fNdQ)  
-[![Discord](https://img.shields.io/badge/Discord-Join-blue?logo=discord)](https://discord.gg/5bphCGJUGA)
+[![Discord](https://img.shields.io/badge/Discord-Join-blue?logo=discord)](https://discord.gg/bDfjAjGj2C)
 
 # Project Homunculus: Hall Effect VR Glove
 
@@ -72,7 +72,7 @@ Thank you to everyone who made this glove happen:
 - **Hugging Face**, for sponsoring development of the glove for the past year
 - **[HOMIE](https://homietele.github.io/)**
 - **[Eidon](https://github.com/Eidon-AI/eidon-glove)**
-- **The Homunculus community**, on [Discord](https://discord.gg/5bphCGJUGA)
+- **The Homunculus community**, on [Discord](https://discord.gg/bDfjAjGj2C)
 
 And thanks to everyone else who collaborated on this project: testing, feedback,
 ideas and builds all shaped it. 
