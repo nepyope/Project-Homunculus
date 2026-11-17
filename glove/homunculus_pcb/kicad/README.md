@@ -1,17 +1,25 @@
-# PCB Desk Display
+# Homunculus Glove PCB
 
-The idea was to have a special purpose, small footprint PCB for connecting an I²C Display, Button and Status LED.
+<img src="../images/pcb_top.png" width="100%" alt="PCB top layers">
 
-![image](https://user-images.githubusercontent.com/53529846/179391757-1fb046c0-5aed-411d-8276-1b1e12cbd52c.png)
+<img src="../images/pcb_photo.png" width="100%" alt="Assembled PCB">
+
+The sensor board for the Homunculus glove: an 80 × 36 mm two-layer board (glove-v4.2). Each of the 16 JST SH 3-pin
+connectors (`H0`–`H15`) takes one Hall sensor. They feed a CD74HC4067 16-channel analog mux (`U3`) that the
+ESP32-C3-WROOM-02 (`U1`) switches and samples. It's powered from USB-C (`J1`) through a fuse and an AMS1117-3.3
+regulator (`U2`), and three OPA340 op-amps (`U4`–`U6`) sit in the analog path to the ADC.
 
 ## The PCB
 
-The PCB including the ESP32-C3 Antenna has a total footprint of `20mmx30mm`. The files can be found in [`./pcb`](./pcb).
+The KiCad project is in [`./pcb`](./pcb): open `desk_display.kicad_pro` (schematic + layout, custom footprints in
+`lib/`). Gerbers, BOM and pick-and-place files for ordering are one level up, in [`../`](../).
 
 ## The Code
 
-The code currently is only a small placeholder to test the different parts of the PCB. The files can be found in [`./code`](./code) in form of a PlatformIO project.
+[`code.ino`](./code.ino) is a minimal test sketch: it steps the mux through all 16 channels and prints the raw 12-bit
+readings over serial at 115200 baud. The [`./code`](./code) PlatformIO project is a leftover from the board this
+project started from and doesn't target the glove.
 
 ## License
 
-Enjoy the work and do what you want. `CERN OHL v2 Permissive`
+`CERN OHL v2 Permissive`, see [`LICENSE`](./LICENSE).
